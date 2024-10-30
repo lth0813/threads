@@ -1,0 +1,107 @@
+.login-container, .signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* 중앙 정렬 */
+    min-height: calc(100vh - 100px); /* footer 높이 만큼 빼줌 */
+    padding: 20px;
+  }
+  
+  .login-thumbnail-space, .signup-thumbnail-space {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    margin-bottom: 20px;
+  }
+  
+  .login-form, .signup-form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .login-input-field, .signup-input-field {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background-color: #f5f5f5;
+  }
+  
+  .login-input-field:focus, .signup-input-field:focus {
+    outline: none;
+    border-color: #999;
+  }
+  
+  .login-button, .signup-button {
+    padding: 14px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #000;
+    color: #777;
+    border-radius: 8px;
+    border: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .login-button.enabled, .signup-button.enabled {
+    color: #fff;
+  }
+  
+  .login-button:disabled,
+.signup-button:disabled {
+  background-color: #000; /* 비활성화된 버튼의 배경색 */
+  color: darkgray; /* 비활성화된 버튼의 글씨 색 */
+  cursor: not-allowed; /* 금지 마우스 커서 */
+}
+
+  .login-extra-links, .signup-extra-links {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .login-signup-link, .signup-signup-link, .login-forgot-password {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .login-separator {
+    color: #999;
+  }
+  
+  .login-divider, .signup-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #999;
+    font-size: 0.9rem;
+  }
+  
+  .login-divider hr, .signup-divider hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+  
+  .login-google-button, .login-kakao-button, .signup-button {
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .login-google-button {
+    background-color: #4285F4;
+    color: #fff;
+  }
+  
+  .login-kakao-button {
+    background-color: #FEE500;
+    color: #3C1E1E;
+  }
+  
