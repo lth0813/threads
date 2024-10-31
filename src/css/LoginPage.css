@@ -7,7 +7,7 @@
     padding: 20px;
   }
   
-  .login-thumbnail-space, .signup-thumbnail-space {
+  .login-thumbnail-space, .signup-thumbnail-space, .login-thumbnail-space img, .signup-thumbnail-space, img {
     width: 100px;
     height: 100px;
     background-color: #eee;

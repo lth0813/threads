@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/LoginPage.css';
+import thumbnail from "../images/thumbnail.png";
+
+interface LoginPageProps {
+  onFlip: () => void;
+}
 
 const LoginPage: React.FC = () => {
   const [username, setUsername] = useState('');
@@ -11,7 +16,7 @@ const LoginPage: React.FC = () => {
 
   return (
     <div className="login-container">
-      <div className="login-thumbnail-space"></div>
+      <div className="login-thumbnail-space"><img src={thumbnail}></img></div>
 
       <form method="POST" className="login-form">
         <input

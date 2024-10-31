@@ -97,4 +97,70 @@
     background-color: #FEE500;
     color: #3C1E1E;
   }
-  
+
+.signup-username-container {
+  display: flex;
+  /* align-items: center; */
+}
+
+.username-input {
+  width: 70%;
+  margin-right: 5px;
+  padding: 10px;
+  height: 100%; /* 높이를 중복확인 버튼과 맞추기 위해 추가 */
+  box-sizing: border-box;
+}
+
+.check-duplicate-button {
+  width: 30%;
+  padding: 10px;
+  height: 100%; /* 높이를 아이디 입력 필드와 맞추기 위해 추가 */
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.signup-input-field {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+  border: 1px solid transparent;
+}
+
+.signup-input-field:focus {
+  border: 1px solid #999;
+}
+
+.signup-button:disabled {
+  background-color: #000;
+  color: darkgray;
+  cursor: not-allowed;
+}
+
+/* 아이디 중복확인 메시지 */
+.username-message {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.username-message.valid {
+  color: green;
+}
+
+.username-message.invalid {
+  color: red;
+}
+
+/* 비밀번호 불일치 메시지 */
+.password-match-message {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.password-match-message.invalid {
+  color: red;
+}

@@ -1,6 +1,9 @@
 // App.tsx
+// react-router-dom
+// react-flip-page
 import React from 'react';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Navigate, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+
 import Footer from './components/Footer.tsx';
 import LoginPage from './components/LoginPage.tsx';
 import SignupPage from './components/SignupPage.tsx';
@@ -13,6 +16,7 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/login" element={<LoginPage />} />
             <Route path="/signup" element={<SignupPage />} />
+            <Route path="*" element={<Navigate to="/login" replace />}/>
           </Routes>
         </div>
         <Footer />
