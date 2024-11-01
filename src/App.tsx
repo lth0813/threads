@@ -1,6 +1,5 @@
 // App.tsx
 // react-router-dom
-// react-flip-page
 import React from 'react';
 import { Navigate, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 

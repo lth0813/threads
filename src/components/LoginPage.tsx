@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom';
 import '../css/LoginPage.css';
 import thumbnail from "../images/thumbnail.png";
 
-interface LoginPageProps {
-  onFlip: () => void;
-}
-
 const LoginPage: React.FC = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');

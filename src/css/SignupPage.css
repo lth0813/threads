@@ -115,12 +115,19 @@
   width: 30%;
   padding: 10px;
   height: 100%; /* 높이를 아이디 입력 필드와 맞추기 위해 추가 */
-  background-color: #333;
+  background-color: #000;
   color: #fff;
   border: none;
   cursor: pointer;
   border-radius: 5px;
   box-sizing: border-box;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.check-duplicate-button:disabled {
+  background-color: #000; /* 비활성화 시 회색 */
+  color: darkgray;
+  cursor: not-allowed; /* 비활성화 시 커서 변경 */
 }
 
 .signup-input-field {
@@ -142,25 +149,30 @@
 }
 
 /* 아이디 중복확인 메시지 */
-.username-message {
-  font-size: 0.8rem;
-  margin-top: 5px;
+.username-message,
+.password-match-message {
+  font-size: 0.7rem;
+  margin-top: 2px;
+}
+
+.signup-username-container {
+  display: flex;
+}
+
+.username-input,
+.check-duplicate-button {
+  margin-right: 5px;
+}
+
+.username-input {
+  width: 70%;
 }
 
 .username-message.valid {
   color: green;
 }
 
-.username-message.invalid {
-  color: red;
-}
-
-/* 비밀번호 불일치 메시지 */
-.password-match-message {
-  font-size: 0.8rem;
-  margin-top: 5px;
-}
-
+.username-message.invalid,
 .password-match-message.invalid {
   color: red;
 }
